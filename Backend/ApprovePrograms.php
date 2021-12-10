@@ -54,4 +54,7 @@ if($resultselect->num_rows > 0){
     }
     echo ' </table>';
 }
+else{
+    echo 'No Program has been Approved yet';
+}
 
