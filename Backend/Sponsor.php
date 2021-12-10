@@ -13,11 +13,12 @@ echo '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstra
 
 $sqlsponsor="select programs.program_name ,television_stations.tvstation_name, sponsors.sponsor_name, 
 sponsors.sponsor_contact,sponsors.sponsor_email,sponsors.sponsor_type
-from programs,television_stations,sponsors,tvstatus
-where programs.sponsor_id=sponsors.sponsor_id
-and programs.tvstation_id=television_stations.tvstation_id
+from programs,television_stations,sponsors,tvstatus,programstatus 
+where programs.sponsor_id=sponsors.sponsor_id 
+and programs.tvstation_id=television_stations.tvstation_id 
 and television_stations.tvstation_name=tvstatus.tvstation_name
-and tvstatus=1";
+and tvstatus=1
+and programstatus=1";
 $resultsponsor= $conn->query($sqlsponsor);
 if($resultsponsor->num_rows >0){
     echo '<h3 style="margin-top: 5%; text-align:center;">LIST OF SPONSORS AND CONTACT INFO<h3>';
