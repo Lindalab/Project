@@ -1,0 +1,51 @@
+body{
+    margin: 20px;
+    background-color: #d3d3d34f;
+    
+
+}
+#MainContainer{
+    border: solid thin;
+    border-color:lightblue;
+    padding-bottom: 30px;
+    margin: 5%;
+    height: 600px;
+    background-color: white;
+}
+nav{
+    margin-top: 30px;
+    margin-left: 10%;
+}
+nav img{
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#b1{
+    float: right;
+    margin-right: 10%;
+    
+}
+#B1{
+    color:white;
+    font-weight: bolder;
+}
+.card{
+    margin-right: 40px;
+}
+
+#b2{
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+.dropdown{
+    margin-top: -4%;
+    margin-right: 5%;
+    margin-left: 34%;
+
+}
