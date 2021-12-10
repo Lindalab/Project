@@ -54,3 +54,5 @@ else{
     echo 'Nothing has been approved';
 }
 
+?>
+
