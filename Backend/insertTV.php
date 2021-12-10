@@ -35,7 +35,7 @@ if(isset($_POST['Submit'])){
   and  contact='$contact' ";
  $resultTVEC=$conn->query($sqlcheckTVEC);
  
- if($resultTVEC === 0){
+ if($resultTVEC->num_rows === 0){
    
    $sql="INSERT INTO `television_stations`(`tvstation_name`, `founding_year`, 
   `location`, `ownership_type`, `viewtype`, `ceo_name`, `email`, `contact`)
