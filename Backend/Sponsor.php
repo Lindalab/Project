@@ -11,7 +11,7 @@
 require ("dbconnection.php");
 echo '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">';
 
-$sqlsponsor="select programs.program_name ,television_stations.tvstation_name, sponsors.sponsor_name, 
+$sqlsponsor="select DISTINCT(programs.program_name ) ,television_stations.tvstation_name, sponsors.sponsor_name, 
 sponsors.sponsor_contact,sponsors.sponsor_email,sponsors.sponsor_type
 from programs,television_stations,sponsors,tvstatus,programstatus 
 where programs.sponsor_id=sponsors.sponsor_id 
