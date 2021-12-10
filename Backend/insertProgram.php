@@ -37,7 +37,7 @@ if (isset($_POST['Submit'])){
 
     $sqlcheckpname="SELECT `program_name` FROM `programs` WHERE program_name = '$proname' ";
         $resultpname=$conn->query($sqlcheckpname);
-        if($resultpname === 0){
+        if($resultpname->num_rows === 0){
 
     $sqlprog="INSERT INTO `programs`( `program_name`, `program_type`, `program_time`, `program_daysshowed`,
      `program_duration`, `tvstation_id`, `producer_id`, `sponsor_id`) 
