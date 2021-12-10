@@ -50,4 +50,7 @@ if($resultselect->num_rows > 0){
     }
     echo ' </table>';
 }
+else{
+    echo 'Nothing has been approved';
+}
 
