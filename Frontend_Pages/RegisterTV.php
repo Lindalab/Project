@@ -22,7 +22,7 @@
                      <!-- Email input  -->
                  <label for="email"><b>Email</b></label><br>
                  <input type="text" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                 title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                 title="Must contain at least one  number , a lowercase letter, and at least 8 or more characters"
                  name="email" required><br>
                       <!-- Location  input  -->
                  <label for="location"><b>Location</b></label><br>
