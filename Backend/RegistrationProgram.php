@@ -162,7 +162,7 @@ if(isset($_GET['Disapprove'])){
   </head>
   <body>
     <h4 style= "margin-left:20%; margin-top: 3%;">Pending List of Registered Programs</h4><br>
-
+<a href="..\Frontend_Pages\Adminpage.php"  id="Logout" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Back to Admin</a>
     <form  style="float:right; padding-top: 20px;">
       <label>View</label><br>
     <input type="radio"  name="status" value="0"><span>Pending</span><br>
