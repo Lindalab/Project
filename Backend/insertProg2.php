@@ -46,7 +46,7 @@ if (isset($_POST['Submit'])){
     {
         $sqlcheckpname="SELECT `program_name` FROM `programs` WHERE program_name = '$proname' ";
         $resultpname=$conn->query($sqlcheckpname);
-        if($resultpname === 0){
+        if($resultpname->num_rows === 0){
             $sqlspon="INSERT INTO `sponsors`( `sponsor_name`, `sponsor_type`, `sponsor_contact`, `sponsor_email`, `sponsor_address`)
             VALUES ('$spname',' $sptype','$spcontact','$spemail','$spaddress')";
             $resultspo=$conn->query($sqlspon);
