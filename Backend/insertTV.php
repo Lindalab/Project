@@ -44,13 +44,14 @@ if(isset($_POST['Submit'])){
    $result=$conn->query($sql);
    
    if($result === True){
+     $last_id = $conn->insert_id;
     $Pendingstatus= 0;
     $sql_tvstatus="INSERT INTO `tvstatus`(`tvstation_name`, `tvstatus`) VALUES ('$name','$Pendingstatus')";
     $result=$conn->query($sql_tvstatus);
     echo '<script>
-    alert("You have successfully registered your Television Station");
+    alert("Successfully Registration");
     </script>';
-    header("location: ..\Frontend_Pages\Landingpage.php");
+    echo "Your Identification ID is: " . $last_id;
     } 
     else{
       echo "<script>
