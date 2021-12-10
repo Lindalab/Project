@@ -162,6 +162,7 @@ if(isset($_GET['Disapprove'])){
   </head>
   <body>
     <h4 style= "margin-left:20%; margin-top: 3%;">Pending List of Registered Television Station</h4><br>
+   <a href="..\Frontend_Pages\Adminpage.php"  id="Logout" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Back to Admin</a>
     <!-- Form to allow you to see approve and disapprove Tv stations -->
     <form style="float:right; padding-top: 20px;">
       <label>View</label><br>
