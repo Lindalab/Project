@@ -39,17 +39,4 @@ final class UnitTest extends TestCase
 }
 
 
-//use PHPUnit\Framework\TestCase;
-//include ("RegistrationProgram.php");
-//include ("functions.php");
- //final class  UnitTest extends TestCase 
- //{
-
-     //public function TestInsertionCheck(): void
-     //{
-      //$Table=new Tableset();
-      //$run=$Table->InsertProg('David','Movie','Monday','2pm','Onua','David','30mins', 'Afsanet');
-     //  $this->assertTrue($run);
-   // }
- //}
 ?>
