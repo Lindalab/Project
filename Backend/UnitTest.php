@@ -12,22 +12,28 @@ final class UnitTest extends TestCase
 
     public function testAdministratorCanRemove(): void
     {
-         $this->assertTrue(TRUE);
+     
+      $run=Disapprove('David','Dispprove');
+       $this->assertTrue($run);
+      
     }
 
     public function testAdministratorCanApprove(): void
     {
-         $this->assertTrue(TRUE);
+       $run=Approve('David','Approve');
+       $this->assertTrue($run);
     }
 
     public function testUserCanApproveProgram(): void
     {
-         $this->assertTrue(False);
+          $run=Approve('David','Approve');
+       $this->assertTrue($run);
     }
 
     public function testUserCanRegisterProgram(): void
     {
-         $this->assertTrue(True);
+          $run=Register();
+       $this->assertTrue($run);
     }
 
 }
